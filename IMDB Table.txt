@@ -1,0 +1,82 @@
+
+Create Database:
+	Create database IMDB
+
+
+Movie Table:
+
+	Create table Movie (ID int, Movie Name varchar(30), Director Name varchar(30), Release Date varchar(30)); 
+
+INSERT INTO movie (ID, Movie Name, Director Name, Release Date) VALUES ('1', 'Singam','Hari', '28 May 2010');
+INSERT INTO movie (ID, Movie Name, Director Name, Release Date) VALUES ('4', 'Bigil', 'Atlee', '25 October 2019');
+INSERT INTO movie (ID, Movie Name, Director Name, Release Date) VALUES ('4', 'Pradeep Ranganathan', 'Vamshi Paidipally', '4 November 2022');
+INSERT INTO movie (ID, Movie Name, Director Name, Release Date) VALUES ('4', 'Varisu', 'Vamshi Paidipally', '11 January 2023');
+INSERT INTO movie (ID, Movie Name, Director Name, Release Date) VALUES ('5', 'Dada', 'Ganesh K. Babu', '10 February 2023');
+INSERT INTO movie (ID, Movie Name, Director Name, Release Date) VALUES ('4', 'DSP', 'Ponram', '2 December 2022');
+INSERT INTO movie (ID, Movie Name, Director Name, Release Date) VALUES ('7', 'Vaathi', 'Venky Atluri', '17 February 2023');
+
+
+User Table:
+
+	Create table User (ID int, Movie ID int, User ID int, Rating int,Review varchar(30)); 
+
+INSERT INTO user (ID, Movie ID, User ID, Rating, Review) VALUES (1, '1', '101', '4', 'Its very good action movie.');
+INSERT INTO user (ID, Movie ID, User ID, Rating, Review) VALUES (2, '2', '102', '4', 'Very good sports movie');
+INSERT INTO user (ID, Movie ID, User ID, Rating, Review) VALUES (3, '3', '103', '5', 'very funny and Romance movie');
+INSERT INTO user (ID, Movie ID, User ID, Rating, Review) VALUES (4, '4', '104', '3', 'good movie');
+INSERT INTO user (ID, Movie ID, User ID, Rating, Review) VALUES (5, '5', '105', '2', 'Its ok');
+INSERT INTO user (ID, Movie ID, User ID, Rating, Review) VALUES (6, '7', '106', '3', 'good');
+INSERT INTO user (ID, Movie ID, User ID, Rating, Review) VALUES (7, '6', '107', '5', 'Fentastic Movie');
+INSERT INTO user (ID, Movie ID, User ID, Rating, Review) VALUES (8, '3', '108', '5', 'Very very super and comedy movie');
+INSERT INTO user (ID, Movie ID, User ID, Rating, Review) VALUES (9, '4', '109', '1', 'ok');
+INSERT INTO user (ID, Movie ID, User ID, Rating, Review) VALUES (10, '5', '110', '3', 'super');
+INSERT INTO user (ID, Movie ID, User ID, Rating, Review) VALUES (11, '1', '111', '3', 'good');
+
+
+Role Table:
+
+	Create table Role (ID int, Artist Name varchar(30), Role(30));
+
+INSERT INTO role (ID, Artist Name, Role) VALUES (1, 'Suriya', 'Hero');
+INSERT INTO role (ID, Artist Name, Role) VALUES (2, 'Vijay', 'Hero');
+INSERT INTO role (ID, Artist Name, Role) VALUES (3, 'Pradeep Ranganathan', 'Hero, Director');
+INSERT INTO role (ID, Artist Name, Role) VALUES (4, 'Kavin', 'Hero');
+INSERT INTO role (ID, Artist Name, Role) VALUES (5, 'Vijay Sethupathi', 'Hero');
+INSERT INTO role (ID, Artist Name, Role) VALUES (6, 'Dhanush', 'Hero, Singer');
+
+Genre Table:
+
+	Create table Genre (ID int, Movie ID int, Genre varchar(30)); 
+
+INSERT INTO genre (ID, Movie ID, Genre) VALUES (1, '1', 'Action');
+INSERT INTO genre (ID, Movie ID, Genre) VALUES (2, '2', 'Sports');
+INSERT INTO genre (ID, Movie ID, Genre) VALUES (3, '3', 'Romance');
+INSERT INTO genre (ID, Movie ID, Genre) VALUES (4, '4', 'Family');
+INSERT INTO genre (ID, Movie ID, Genre) VALUES (5, '5', 'Romance');
+INSERT INTO genre (ID, Movie ID, Genre) VALUES (6, '6', 'Action);
+INSERT INTO genre (ID, Movie ID, Genre) VALUES (7, '7', 'Joly');
+
+
+Artist Table:
+
+	Create table Artist (ID int, Movie ID int, Artist Name varchar(30));
+	
+INSERT INTO artist (ID, Movie ID, Artist Name) VALUES (1, '1', 'Suriya');
+INSERT INTO artist (ID, Movie ID, Artist Name) VALUES (2, '2', 'Vijay');
+INSERT INTO artist (ID, Movie ID, Artist Name) VALUES (3, '3', 'Pradeep Ranganathan');
+INSERT INTO artist (ID, Movie ID, Artist Name) VALUES (4, '4', 'Vijay');
+INSERT INTO artist (ID, Movie ID, Artist Name) VALUES (5, '5', 'Kavin');
+INSERT INTO artist (ID, Movie ID, Artist Name) VALUES (6, '6', 'Vijay Sethupathi');
+INSERT INTO artist (ID, Movie ID, Artist Name) VALUES (7, '7', 'Dhanush');
+
+Skills Table:
+
+	Create table Artist (ID int, Movie ID int, Artist Skill varchar(30));	
+
+INSERT INTO skills (ID, Movie ID, Actor Skill) VALUES (1, '1', 'Acting, Dancing, Singing');
+INSERT INTO skills (ID, Movie ID, Actor Skill) VALUES (2, '2', 'Acting, producting, Singing');
+INSERT INTO skills (ID, Movie ID, Actor Skill) VALUES (3, '3', 'Acting, Dancing');
+INSERT INTO skills (ID, Movie ID, Actor Skill) VALUES (4, '4', 'Acting');
+INSERT INTO skills (ID, Movie ID, Actor Skill) VALUES (5, '5', 'Acting');
+INSERT INTO skills (ID, Movie ID, Actor Skill) VALUES (6, '6', 'Acting, Singing,Directing');
+
